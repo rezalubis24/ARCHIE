@@ -293,13 +293,10 @@ header.sticky .nav-bar{
 
 
 /* About Section */
-.isi{
-    display: flex;
-}
-
 .about .container .content{
     column-gap: 40px;
     width: 100%;
+
 }
 
 .about-img{
@@ -307,8 +304,8 @@ header.sticky .nav-bar{
 }
 
 .about-img img{
-    width: 100%;
-    min-width: 300px;
+    max-width: 100%;
+    min-width: 500px;
     border-radius: 10px;
 }
 
@@ -336,6 +333,7 @@ header.sticky .nav-bar{
     font-size: var(--normal-font-size);
     margin-bottom: 15px;
     padding-bottom: 25px;
+    /* padding-right: 10px; */
     border-bottom: 2px solid var(--line-color);
 }
 
