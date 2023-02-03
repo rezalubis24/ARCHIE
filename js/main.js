@@ -26,3 +26,25 @@ modalCloseBtns.forEach((modalCloseBtns) => {
         });
     });
 });
+
+// portfollio section - modal
+const portfolioModels = document.querySelectorAll(".portfolio-model");
+const imgCards = document.querySelectorAll(".img-card");
+const portfolioCloseBtns = document.querySelectorAll(".portfolio-close-btn");
+
+var portfolioModel = function(modelClick){
+    portfolioModels[modelClick].classList.add("active");
+}
+imgCards.forEach((imgCards, i) => {
+    imgCards.addEventListener("click",() => {
+        portfolioModel(i);
+    });
+});
+
+portfolioCloseBtns.forEach((portfolioCloseBtns) => {
+    portfolioCloseBtns.addEventListener("click", () => {
+        portfolioModels.forEach((portfolioModelView) => {
+            portfolioModelView.classList.remove("active");
+        });
+    });
+});
